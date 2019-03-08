@@ -2,4 +2,4 @@ FROM swift:4.2.2
 EXPOSE 8080
 COPY . /project
 RUN cd /project && swift build --build-path=.build-ubuntu-gcd -Xswiftc -DGCD_ASYNCH
-CMD /project/.build-ubuntu-gcd/debug/kitura-helloworld
+CMD /project/.build-ubuntu-gcd/debug/DebugWebSocketServer
